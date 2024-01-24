@@ -17,7 +17,7 @@ fi
 
 
 # Set the image name and flavor
-IMAGE_NAME="djdevpro/ovhsentence:latest"
+IMAGE_NAME="djdevpro/ovhsentence.git"
 FLAVOR="ai1-1-cpu"
 CPU="1"
 REPLICAS="1"
@@ -47,7 +47,7 @@ done
 
 ovhai app run \
     $COMMAND \
-    --name ovhsentence \
+    --name ovhsentence.git \
     --flavor "$FLAVOR" \
     --cpu "$CPU" \
     --replicas "$REPLICAS" \
@@ -56,5 +56,5 @@ ovhai app run \
     --probe-port "$PROBE_PORT" \
     --label owner=djdevpro \
     $UNSECURE_HTTP \
-    "$IMAGE_NAME:latest"
+    $IMAGE_NAME
 

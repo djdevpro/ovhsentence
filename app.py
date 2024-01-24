@@ -30,7 +30,7 @@ except:
     pass
 
 
-model = SentenceTransformer(MODEL_NAME, device='cpu')
+model = SentenceTransformer("dangvantuan/sentence-camembert-base", device='cpu')
 
 
 class EmbeddingRequest(BaseModel):
