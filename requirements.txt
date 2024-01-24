@@ -1,0 +1,7 @@
+uvicorn==0.23.2
+numpy==1.25.2
+fastapi==0.103.1
+pydantic
+sentence-transformers==2.2.2
+python-dotenv==0.21.1
+astrapy
